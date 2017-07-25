@@ -1,3 +1,7 @@
+body {
+	background-image: url("images/cork-wallet.png");
+}
+
 body, p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777;
@@ -16,24 +20,27 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 	font-weight: bold;
 }
 
-.main, .sidebar {
+.inner {
 	background-color: #ffffff;
 	border: 1px #dddddd solid; 
+	
 }
-
+/**
 .main {
 	padding: 0px 10px 15px;
 }
-
+**/
 /** Padding for H1 based on .col-md-6 and .col-xs-12 of subcol **/ 
+/**
 .col-md-8 h1, .col-xs-12 h1, form, .about {
 	padding: 0 15px;
 }
-
+**/
 .about img {
 	width: 200px;
 	height: 200px;
 }
+
 
 .col-md-4 a img {
 	width: 42px;
@@ -78,5 +85,10 @@ div.desc{
 
 .center-block {
     float: none;  
+}
+
+.clear {
+	clear: both;
+	height: 60px;
 }
 
