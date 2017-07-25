@@ -1,0 +1,14 @@
+.center-block {
+    float: none;
+   
+}
+
+.col-md-8 img {*/
+	width: 200px;
+	height: 200px;
+}
+
+.col-md-4 a img {
+	width: 42px;
+	height: 42px;
+}
