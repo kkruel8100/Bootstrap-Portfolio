@@ -5,12 +5,24 @@ body {
 body, p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777;
+	line-height: 2;
 }
+
 
 h1, h2, h3, h4, h5, h6, .navbar-brand {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaae;
 	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.navbar-brand {
+	margin-bottom: 0;
+}
+
+.navbar-header a.navbar-brand:hover {
+	background: #e0e0e0;
+	color: #4aaaae;
 }
 
 .navbar-header .navbar-brand {
@@ -20,31 +32,50 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 	font-weight: bold;
 }
 
+.navbar-default .navbar-right li a:hover {
+	color: #4aaaae;
+}
+
 .inner {
 	background-color: #ffffff;
-	border: 1px #dddddd solid; 
-	
+	border: 1px #dddddd solid;	
+	margin-bottom: 30px;
 }
-/**
-.main {
-	padding: 0px 10px 15px;
+
+.main h1, .main .abouttext, .main .about, .main .inner form {
+	padding-left: 20px;
+	padding-right: 20px;
 }
-**/
-/** Padding for H1 based on .col-md-6 and .col-xs-12 of subcol **/ 
-/**
-.col-md-8 h1, .col-xs-12 h1, form, .about {
-	padding: 0 15px;
+
+.inner button {
+	background-color: #4aaaae;
+	color: #fff;
+	margin-bottom: 20px;
 }
-**/
+
 .about img {
 	width: 200px;
 	height: 200px;
+	margin-bottom: 20px;
 }
 
+.sidebar .inner {
+	margin-bottom: 20px;
+	padding: 10px 0px 30px;
+	width: 80%
+}
 
-.col-md-4 a img {
-	width: 42px;
-	height: 42px;
+.sidebar a img {
+	width: 52px;
+	height: 52px;
+}
+
+.sidebar .inner a:hover {
+	opacity: .5;
+}
+
+.sidebar .middle {
+	padding: 0 20px;
 }
 
 .thumbnail {
@@ -58,18 +89,27 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 	width: 100%;
 }
 
+.inner .thumbnail img:hover {
+	opacity: .5;
+}
+
+.inner .thumbnail a .caption:hover, .inner .thumbnail a .caption h4:hover {
+	background-color: #e0e0e0;
+	color: #4aaaa5;
+}
+
 .thumbnail .caption {
 	position: absolute;
 	bottom: 5%;
 	left: 0; 
 	width: 100%;
 	background-color: #4aaaa5;
-
 }
 
 .thumbnail h4 {
 	color: #ffffff;
 	font-weight: normal;
+	margin-bottom: 15px;
 }
 
 div.desc{
@@ -82,13 +122,44 @@ div.desc{
     filter: alpha(opacity=50);
 }
 
-
 .center-block {
     float: none;  
 }
 
 .clear {
 	clear: both;
-	height: 60px;
+	height: 63px;
 }
 
+.navbar-fixed-bottom {
+	background-color: #666666;
+	border-color: #4aaaa5;
+	border-width: 4px 0 0;
+}
+
+.navbar-fixed-bottom p.navbar-text{
+	color: #babbaf;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.sidebar .inner {
+		width: 100%;
+	}
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	
+	.sidebar .inner {
+		width: 100%;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+	.sidebar .inner {
+		width: 100%;
+	}
+}
